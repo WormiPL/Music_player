@@ -6,9 +6,27 @@ const text = document.querySelectorAll('.navtop li a')
 const dropdown_content = document.querySelector('.dropdown-content')
 const controls = document.querySelectorAll('.audiocontrols span')
 const controls_hover = document.querySelectorAll('.audiocontrols span:hover')
+const card = document.querySelector('.audiopanel');
+
 
 
 let state = true //true dla białego
+
+const white_icon  = ()=>{
+    return`
+    <img src="./img/white/icons8-previous-50.png"></img>
+    `
+}
+
+const black_icon = ()=>{
+    return`
+    <p>black</p>
+    `
+}
+
+window.onload = ()=>{
+    card.innerHTML = white_icon()
+}
 
 const white_theme = ()=>{
     background_image.src = './img/bg1.jpg'
@@ -21,6 +39,7 @@ const white_theme = ()=>{
     controls.forEach((players)=>{
         players.style.backgroundColor = '#333'
     })
+    card.innerHTML = white_icon()
 }
 
 const black_theme = ()=>{
@@ -33,6 +52,7 @@ const black_theme = ()=>{
     controls.forEach((players)=>{
         players.style.backgroundColor = '#c7c7c7'
     })
+    card.innerHTML = black_icon()
 }
 
 toggle_theme.addEventListener('click',()=>{
