@@ -132,4 +132,34 @@ input:checked + .slider:before {
 .dark-mode #darkModeStatus {
     color: #fff;
 }
-
+.audiopanel{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); 
+background: rgba(255, 255, 255, 0.22);
+border-radius: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+}
+.material-symbols-outlined{
+  width: 70px;
+}
+.audiocontrols span{
+  font-size: 45px;
+  background-color: #333;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.audiocontrols span:hover{
+  background-color: rgb(85, 125, 255);
+  cursor: pointer;
+}
+.audiopanel p{
+  font-size: 20px;
+}

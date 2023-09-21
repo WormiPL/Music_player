@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="style.css">
-    <title>MusicByWormi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <title>MusicByWormi</title>
 </head>
+
 <body>
-        <img src="/img/bg1.jpg" alt="background_light" id="bg_light">
-            <div class="navtop">
-                <ul>
-                  <li><a href="#">Music by Wormi</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropbtn">My playlist</a>
-                    <div class="dropdown-content">
-                      <a href="#">Yin</a>
-                      <a href="#">Yang</a>
-                    </div> 
-                    </li>
-                    <li><a href="#">Bajojajo</a></li>
-                </ul>
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider round" id="dark_mode"></span>
-                </label>
-              </div>
-    <script src="script.js"></script>
+  <img src="/img/bg1.jpg" alt="background_light" id="bg_light">
+  <div class="navtop">
+    <ul>
+      <li><a href="#">Music by Wormi</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">My playlist</a>
+        <div class="dropdown-content">
+          <a href="#">Yin</a>
+          <a href="#">Yang</a>
+        </div>
+      </li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="https://zop-chrzanow.org ">ZOP</a></li>
+    </ul>
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round" id="dark_mode"></span>
+    </label>
+  </div>
+
+  <div class="audiopanel">
+    <p>MusicByWormi</p>
+    <div class="audiocontrols">
+      <span class="material-symbols-outlined">
+        lyrics
+        </span>
+    <span class="material-symbols-outlined">
+      skip_previous
+      </span>
+      <span class="material-symbols-outlined">
+        play_arrow
+        </span>
+      <span class="material-symbols-outlined">
+        skip_next
+        </span>
+        <span class="material-symbols-outlined">
+          album
+          </span>
+      </div>
+  </div>
+  <script src="script.js"></script> 
 </body>
+
 </html>
