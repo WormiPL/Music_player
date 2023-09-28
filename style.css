@@ -157,9 +157,13 @@ backdrop-filter: blur(6.7px);
   -webkit-text-fill-color: transparent;
 }
 .audiocontrols span:hover{
-  background-color: rgb(85, 125, 255);
   cursor: pointer;
+  /* background-color: rgb(85, 125, 255); */
 }
 .audiopanel p{
-  font-size: 20px;
+  font-size: 35px;
+  font-family: 'Dancing Script', cursive;
 }
+ #control_hover.hovered{
+  background-color: rgb(85, 125, 255);
+} 
