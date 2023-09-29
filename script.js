@@ -6,44 +6,51 @@ const text = document.querySelectorAll('.navtop li a')
 const dropdown_content = document.querySelector('.dropdown-content')
 const p = document.querySelector('.audiopanel p')
 const controls = document.querySelectorAll('.audiocontrols span')
-const spanhover = document.querySelectorAll('#controls_hover')   
+const audio = document.querySelector('audio')
 
-let state = true //true dla białego
+    class player{
+    state = true
 
-const white_theme = ()=>{
-    background_image.src = './img/bg1.jpg'
-    navtop.style.backgroundColor = '#c7c7c7'
-    p.style.color='#333'
-    dropdown_content.style.backgroundColor = '#c7c7c7'
-    text.forEach((el)=>{
-        el.style.color = '#333'
-    })
-    controls.forEach((players)=>{
-        players.style.backgroundColor = '#333'
-    })
-}
+        play(){
+        audio.play()
+        }
 
-const black_theme = ()=>{
-    background_image.src = './img/bg2.jpg'
-    navtop.style.backgroundColor = '#333'
-    p.style.color='#c7c7c7'
-    dropdown_content.style.backgroundColor = '#333'
-    text.forEach((el)=>{
-        el.style.color = '#c7c7c7'
-    })
-    controls.forEach((players)=>{
-        players.style.backgroundColor = '#c7c7c7'
-    })
-    }
+        pause(){
+        audio.pause()
+        }
+
+        white_theme(){
+            background_image.src = './img/bg1.jpg'
+            navtop.style.backgroundColor = '#c7c7c7'
+            p.style.color='#333'
+            dropdown_content.style.backgroundColor = '#c7c7c7'
+            text.forEach((el)=>{
+                el.style.color = '#333'
+            })
+            controls.forEach((players)=>{
+                players.style.backgroundColor = '#333'
+            })
+        }
+
+        black_theme(){
+            background_image.src = './img/bg2.jpg'
+            navtop.style.backgroundColor = '#333'
+            p.style.color='#c7c7c7'
+            dropdown_content.style.backgroundColor = '#333'
+            text.forEach((el)=>{
+                el.style.color = '#c7c7c7'
+            })
+            controls.forEach((players)=>{
+                players.style.backgroundColor = '#c7c7c7'
+            })
+        }
+        }
+
+
+    const Player = new player()
 
 toggle_theme.addEventListener('click',()=>{
-    state =!state
-    state ? white_theme() : black_theme()
+    !Player.state
+    Player.state ? Player.white_theme() : Player.black_theme()
 })
 
-spanhover.addEventListener('mouseover', function(){
-    spanhover.classList.add('hovered');
-});
-spanhover.addEventListener('mouseout', function() {
-    element.classList.remove('hovered'); // Remove the 'hovered' class on mouseout
-});

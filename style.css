@@ -145,25 +145,20 @@ border-radius: 20px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.7px);
 -webkit-backdrop-filter: blur(6.7px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
-.material-symbols-outlined{
-  width: 70px;
+
+.audiocontrols{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.audiocontrols span{
-  font-size: 45px;
-  background-color: #333;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.audiocontrols > img{
+    margin: 20px;
+    cursor: pointer;
 }
-.audiocontrols span:hover{
-  cursor: pointer;
-  /* background-color: rgb(85, 125, 255); */
-}
-.audiopanel p{
-  font-size: 35px;
-  font-family: 'Dancing Script', cursive;
-}
- #control_hover.hovered{
-  background-color: rgb(85, 125, 255);
-} 
